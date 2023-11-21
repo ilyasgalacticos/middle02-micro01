@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="insert_init_data" author="ilyas.zhuanyshev">
+        <insert tableName="t_tovary">
+            <column name="item_name" value="Samsung Galaxy Note 18"/>
+            <column name="price" value="1000"/>
+            <column name="amount" value="20"/>
+        </insert>
+        <insert tableName="t_tovary">
+            <column name="item_name" value="XIAOMI REDMI NOTE 12"/>
+            <column name="price" value="250"/>
+            <column name="amount" value="15"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
